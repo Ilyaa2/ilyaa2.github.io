@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+		<title>Маятник</title>
+		<link rel="stylesheet" href="double-pendulum.css" />
+	</head>
+	<body>
+		<style>
+			.content {
+			 text-align:  center;
+			}
+		</style>
+		<h1 class="content">Модель колебаний двойного математического маятника</h1>
+
+		<form>
+			<label for="length1" id="length1-label">Длина 1 нити: 140м</label><br />
+			<input id="length1" name="length1" type="range" min="50" max="300" value="100" autocomplete="off" /><br />
+			<label for="length2" id="length2-label">Длина 2 нити: 100м</label><br />
+			<input id="length2" name="length2" type="range" min="50" max="200" value="100" autocomplete="off" /><br />
+			<label for="angle1" id="angle1-label">Угол 1 маятника: 0.00рад.</label><br />
+			<input id="angle1" name="angle1" type="range" min="0" max="100" value="0" autocomplete="off" /><br />
+			<label for="angle2" id="angle2-label">Угол 2 маятника: 0.00рад.</label><br />
+			<input id="angle2" name="angle2" type="range" min="0" max="100" value="0" autocomplete="off" /><br />
+			<label for="mass1" id="mass1-label">Масса 1 шара: 1кг</label><br />
+			<input id="mass1" name="mass1" type="range" min="1" max="50" value="1" autocomplete="off" /><br />
+			<label for="mass2" id="mass2-label">Масса 2 шара: 1кг</label><br />
+			<input id="mass2" name="mass2" type="range" min="1" max="50" value="1" autocomplete="off" /><br />
+			<button type="button" id="toggle">Запуск</button>
+		</form>
+		
+		
+		<div class="pendulum-container">
+			<div id="ball0" class="bracing"></div>
+			<div id="ball1" class="ball">
+				<div id="thread1" class="thread"></div>
+			</div>
+			<div id="ball2" class="ball">
+				<div id="thread2" class="thread"></div>
+			</div>
+		</div>
+
+		<script src="double-pendulum.js"></script>
+	</body>
+</html>
